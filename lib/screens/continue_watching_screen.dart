@@ -46,7 +46,10 @@ class ContinueWatchingScreen extends StatelessWidget {
               style: kTitle1Style,
             ),
           ),
-          ContinueWatchingList(),
+          Padding(
+            padding: EdgeInsets.symmetric(vertical: 15.00),
+            child: ContinueWatchingList(),
+          ),
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 32.0),
             child: Text(
@@ -135,13 +138,13 @@ class ContinueWatchingCard extends StatelessWidget {
               boxShadow: [
                 BoxShadow(
                   color: course.background.colors[0].withOpacity(0.2),
-                  offset: Offset(0, 20),
-                  blurRadius: 25.0,
+                  offset: Offset(0, 10),
+                  blurRadius: 15.0,
                 ),
                 BoxShadow(
                   color: course.background.colors[1].withOpacity(0.2),
-                  offset: Offset(0, 20),
-                  blurRadius: 25.0,
+                  offset: Offset(0, 10),
+                  blurRadius: 15.0,
                 ),
               ],
             ),
